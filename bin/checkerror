@@ -1,0 +1,10 @@
+# Parameter 1 is the return code
+# Parameter 2 is text to display on failure
+
+
+if [ "${1}" -ne "0" ]; then
+   echo "*** FAIL *** ${2}  *** EXIT CODE (${1}) ***"
+   # terminate script with correct exit code
+   exit ${1}
+fi
+

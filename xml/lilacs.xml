@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<add>
+    <doc>
+        <field name="id">lil-469628</field>
+        <field name="db">LILACS</field>
+        <field name="cc">CL1.1</field>
+        <field name="bvs">regional</field>
+        <field name="type">article</field>
+        <field name="ur">http://www.scielo.cl/cgi-bin/fbpe/fbtext?pid=S0717-75262006000200002</field>
+        <field name="au">Campodónico Garibaldi, Italo</field>
+        <field name="ti">Profesor Dr. Aníbal Rodríguez Velasco</field>
+        <field name="ti">Professor Dr. Anibal Rodriguez Velasco</field>
+        <field name="pg">84 - 87</field>
+        <field name="fo">Rev Chil Obstet Ginecol;71(2): 84-87, 2006. ilus</field>
+        <field name="ta">Rev Chil Obstet Ginecol</field>
+        <field name="is">0048-766X</field>
+        <field name="vi">71</field>
+        <field name="ip">2</field>
+        <field name="ta_var">Revista chilena de obstetricia y ginecología</field>
+        <field name="la">es</field>
+        <field name="dp">2006</field>
+        <field name="cp">CL</field>
+        <field name="da">200600</field>
+        <field name="fulltext">1</field>
+        <field name="weight">36</field>
+    </doc>
+
+      <doc boost="52.0520">
+        <field name="id">lil-470059</field>
+        <field name="db">LILACS</field>
+        <field name="cc">BR1.1</field>
+        <field name="bvs">regional</field>
+        <field name="type">article</field>
+        <field name="ur">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0066-782X2007001700014</field>
+        <field name="ur">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0066-782X2007001700014&amp;lng=pt&amp;nrm=iso&amp;tlng=en</field>
+        <field name="au">Grinberg, Max</field>
+        <field name="ti">E(TI)cossistema da cardiologia diretriz, mecenas do estado da arte</field>
+        <field name="ti">The ecosystem of cardiology guidelines - patrons of the state of the art in cardiology</field>
+        <field name="pg">e136 - e162</field>
+        <field name="fo">Arq Bras Cardiol;89(5): e136-e162, nov. 2007. tab.</field>
+        <field name="ta">Arq Bras Cardiol</field>
+        <field name="is">0066-782X</field>
+        <field name="vi">89</field>
+        <field name="ip">5</field>
+        <field name="ta_var">Arquivos brasileiros de cardiologia</field>
+        <field name="la">en</field>
+        <field name="la">pt</field>
+        <field name="dp">nov. 2007</field>
+        <field name="cp">BR</field>
+        <field name="da">200711</field>
+        <field name="fulltext">1</field>
+        <field name="entry_date">2008-01-03</field>
+      </doc>
+      
+     <doc boost="57.0670">
+        <field name="id">lil-470148</field>
+        <field name="db">LILACS</field>
+        <field name="cc">BR1.1</field>
+        <field name="bvs">regional</field>
+        <field name="type">article</field>
+        <field name="ur">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0004-282X2007000600033</field>
+        <field name="au">Pastura, Giuseppe</field>
+        <field name="au">Mattos, Paulo</field>
+        <field name="au">Araújo, Alexandra Prufer de Queiroz Campos</field>
+        <field name="ti">Prevalência do transtorno do déficit de atenção e hiperatividade e suas comorbidades em uma amostra de escolares</field>
+        <field name="ti">Prevalence of attention deficit hyperactivity disorder and its comorbidities in a sample of school-aged children</field>
+        <field name="pg">1078 - 1083</field>
+        <field name="fo">Arq Neuropsiquiatr;65(4a): 1078-1083, dez. 2007. gra, tab</field>
+        <field name="ta">Arq Neuropsiquiatr</field>
+        <field name="is">0004-282X</field>
+        <field name="vi">65</field>
+        <field name="ip">4a</field>
+        <field name="ta_var">Arquivos de neuro-psiquiatria</field>
+        <field name="la">pt</field>
+       <field name="la_ab">pt</field>
+       <field name="la_ab">en</field>
+        <field name="dp">dez. 2007</field>
+        <field name="cp">BR</field>
+        <field name="da">200712</field>
+        <field name="ab_pt">O transtorno do déficit de atenção e hiperatividade (TDAH) é comum em crianças na idade escolar e freqüentemente apresenta-se em comorbidade com outros distúrbios psiquiátricos. No Brasil, há escassez de estudos em amostras não-clínicas. OBJETIVO: Calcular a prevalência deste transtorno e suas comorbidades numa amostra de escolares. MÉTODO: Estudo observacional analítico seccional realizado numa amostra de escolares do Colégio de Aplicação da Universidade Federal do Rio de Janeiro. Utilizou-se questionário de triagem seguido por entrevista clínica estruturada com os pais de crianças suspeitas de serem portadores do transtorno. RESULTADOS: A prevalência encontrada para o TDAH foi 8,6 por cento. As comorbidades deste transtorno se mostraram presentes em 58 por cento dos casos, sendo transtorno opositivo-desafiador, encontrado em 38,5 por cento dos casos, o mais prevalente. CONCLUSÃO: A prevalência do TDAH e suas comorbidades na amostra estudada é semelhante àquela observada na literatura internacional.(AU)</field>
+        <field name="ab_en">Attention deficit hyperactivity disorder (ADHD) is a frequent condition in school-age children and commonly presents in comorbidity with other psychiatric diseases. In Brazil, there are few studies concerning non-clinical samples. PURPOSE: The present study aims to calculate the prevalence of this disorder and its comorbidities in a sample of school-age children. METHOD: Cross-sectional analytic study was conducted on a non-clinical sample of children and adolescents registered in 2003 in the elementary school of the Federal University of Rio de Janeiro. A screening questionnaire was used and parents of those possible affected children were invited for a clinical structured interview. RESULTS: The prevalence of ADHD was 8.6 percent. Comorbidities were present in 58 percent of the cases and oppositional-defiant disorder was the most common, found in 38.5 percent. CONCLUSIONS: The prevalence of the ADHD and its comorbidities in this sample is similar to that observed in the literature.(AU)</field>
+        <field name="entry_date">2008-01-04</field>
+    </doc>  
+
+    <doc boost="57.0590">
+        <field name="id">lil-470330</field>
+        <field name="db">LILACS</field>
+        <field name="cc">BR1.1</field>
+        <field name="bvs">regional</field>
+        <field name="type">article</field>
+        <field name="ur">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0021-75572007000700009</field>
+        <field name="ur">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0021-75572007000700009&amp;lng=pt&amp;nrm=iso&amp;tlng=en</field>
+        <field name="au">Della Manna, Thais</field>
+        <field name="ti">Nem toda criança diabética é tipo 1: [revisão]</field>
+        <field name="ti">Not every diabetic child has type 1 diabetes mellitus: [review]</field>
+        <field name="pg">S178 - S183</field>
+        <field name="fo">J Pediatr (Rio J);83(5,supl): S178-S183, Nov. 2007. tab.</field>
+        <field name="ta">J Pediatr (Rio J)</field>
+        <field name="is">0021-7557</field>
+        <field name="vi">83</field>
+        <field name="ip">5,supl</field>
+        <field name="ta_var">Jornal de pediatria</field>
+        <field name="la">en</field>
+        <field name="la">pt</field>
+        <field name="la_ab">pt</field>
+        <field name="la_ab">en</field>
+        <field name="dp">Nov. 2007</field>
+        <field name="cp">BR</field>
+        <field name="da">200711</field>        
+        <field name="ab_pt">OBJETIVO: Apesar de o diabetes melito tipo 1 de origem autoimune ser o mais prevalente na infância e adolescência, outras formas de diabetes também podem acometer essa população, implicando em prognóstico e tratamentos diferentes. FONTES DOS DADOS: Foram utilizadas informações através de revisão bibliográfica realizada por busca direta de artigos científicos nas bases de dados MEDLINE e LILACS, além de publicações clássicas referentes ao tema, sendo escolhidas as mais representativas. SÍNTESE DOS DADOS: Este artigo discute os mecanismos fisiopatológicos, quadro clínico e tratamento das diversas formas de diabetes que acometem a faixa etária pediátrica, como diabetes melito tipo 1, diabetes melito tipo 2, diabetes do tipo maturity-onset diabetes of youth, diabetes neonatal, diabetes mitocondrial, diabetes da lipodistrofia generalizada, diabetes secundário a outras pancreatopatias, diabetes secundário a outras endocrinopatias, diabetes associado a infecções e drogas citotóxicas e diabetes relacionado a algumas síndromes genéticas. CONCLUSÃO: O reconhecimento do mecanismo fisiopatológico primário da forma de diabetes apresentada pode orientar seu tratamento específico, otimizando seu controle metabólico e minimizando suas complicações a longo prazo.(AU)</field>
+        <field name="ab_en">OBJECTIVE:Although it is type 1 diabetes mellitus of autoimmune origin that is most prevalent in childhood and adolescence, other forms of diabetes can also affect this population, resulting in different prognosis and treatment. SOURCES: Information was obtained by means of a bibliographic review, carried out by running searches for scientific articles in the MEDLINE and LILACS databases, in addition to classic publications on the subject, with the most representative being chosen. SUMMARY OF THE FINDINGS: This article discusses the pathophysiological mechanisms, clinical presentation and treatment of the various forms of diabetes that affect the pediatric age group, such as type 1 diabetes mellitus, type 2 diabetes mellitus, maturity-onset diabetes of youth, neonatal diabetes, mitochondrial diabetes, diabetes of generalized lipodystrophy, diabetes secondary to other pancreatic diseases, diabetes secondary to other endocrine diseases, diabetes associated with infections and cytotoxic drugs and diabetes related to certain genetic syndromes. CONCLUSIONS: Recognition of the primary pathophysiologic mechanism of the form of diabetes presented can guide specific treatment, optimizing metabolic control and minimizing complications over the long term.(AU)</field>
+        <field name="mh">malaria</field>
+        <field name="clinical_aspect">prognosis</field>
+        <field name="entry_date">2008-01-07</field>
+    </doc>
+</add>

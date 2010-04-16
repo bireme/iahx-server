@@ -1,0 +1,3 @@
+<Context docBase="/home/util/iahx-server/dist/iahx-server-1.3_01.war" debug="0" crossContext="true" >                                                   
+    <Environment name="solr/home" type="java.lang.String" value="/home/util/iahx-server/indexes/bvs/local" override="true" />     
+</Context>  
