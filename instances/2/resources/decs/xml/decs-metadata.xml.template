@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decs-syn-list>
+     <term mfn="2">
+          <category-list>
+               <category>D02.705.539.900</category>
+               <category>D02.886.309.900</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Temefos</descriptor>
+               <descriptor>Temefós</descriptor>
+               <descriptor>Temefós</descriptor>
+          </descriptor_list>
+     </term>
+     <term mfn="3">
+          <category-list>
+               <category>J01.576.423.200.700.100</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abattoirs</descriptor>
+               <descriptor>Mataderos</descriptor>
+               <descriptor>Matadouros</descriptor>
+          </descriptor_list>
+          <synonym_list>
+               <synonym>Abatedouros</synonym>
+               
+               <synonym>Slaughterhouses</synonym>
+          </synonym_list>
+     </term>
+     <term mfn="4">
+          <category-list>
+               <category>HP7.007.097.048</category>
+               <category>L01.143.506.598.400.556.131</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abbreviations as Topic</descriptor>
+               <descriptor>Abreviaturas como Asunto</descriptor>
+               <descriptor>Abreviaturas como Assunto</descriptor>
+          </descriptor_list>
+          <synonym_list>
+               <synonym>Abreviatura dos Medicamentos</synonym>
+               <synonym>Acrônimos como Assunto</synonym>
+               <synonym>Abreviaturas como Tema</synonym>
+               <synonym>Abreviatura de los Medicamentos</synonym>
+               <synonym>Acrónimos como Asunto</synonym>
+               <synonym>Acrónimos como Tema</synonym>
+               <synonym>Drug Abbreviations</synonym>
+          </synonym_list>
+     </term>
+     <term mfn="5">
+          <category-list>
+               <category>A01.047</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abdomen</descriptor>
+               <descriptor>Abdomen</descriptor>
+               <descriptor>Abdome</descriptor>
+          </descriptor_list>
+     </term>
+     <term mfn="6">
+          <category-list>
+               <category>C23.888.646.100.200</category>
+               <category>C23.888.821.030.249</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abdomen, Acute</descriptor>
+               <descriptor>Abdomen Agudo</descriptor>
+               <descriptor>Abdome Agudo</descriptor>
+          </descriptor_list>
+          <synonym_list>
+               
+               <synonym>Abdomen en Tabla</synonym>
+               
+          </synonym_list>
+     </term>
+     <term mfn="7">
+          <category-list>
+               <category>C21.866.017</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abdominal Injuries</descriptor>
+               <descriptor>Traumatismos Abdominales</descriptor>
+               <descriptor>Traumatismos Abdominais</descriptor>
+          </descriptor_list>
+          <synonym_list>
+               <synonym>Lesões Abdominais</synonym>
+               <synonym>Lesiones Abdominales</synonym>
+               
+          </synonym_list>
+     </term>
+     <term mfn="8">
+          <category-list>
+               <category>C04.588.033</category>
+          </category-list>
+          <descriptor_list>
+               <descriptor>Abdominal Neoplasms</descriptor>
+               <descriptor>Neoplasias Abdominales</descriptor>
+               <descriptor>Neoplasias Abdominais</descriptor>
+          </descriptor_list>
+          <synonym_list>
+               <synonym>Tumores Abdominais</synonym>
+               <synonym>Tumores do Abdome</synonym>
+               <synonym>Tumores Abdominales</synonym>
+          </synonym_list>
+     </term>
+</decs-syn-list>

@@ -9,22 +9,39 @@ INICIO=`date`
 
 if [ "$#" -ne 1 ]
 then   
-   echo "iAHx - commit updates on index" 
-   echo "Usage:  commit.sh <indice>"
+   echo "iAHx COMMIT" 
+   echo "Uso:     commit.sh <indice>"
    echo 
-   echo "Ex.: commit.sh  example"
+   echo "Exemplo: commit.sh  example"
    echo
    exit
 fi
 
 INDEX=${1}
 
-# IAHX-SERVER 
-IAHX_SERVER="localhost"
-IAHX_PORT="8080"
+# discovery where index are instaled 
+for instance in `ls ${SCRIPT_PATH}/../instances/`
+do
+  if [ -f ${SCRIPT_PATH}/../instances/${instance}/conf/Catalina/localhost/${INDEX}.xml ];
+  then
+     SERVER=${instance}
+     break
+  fi     	 
+done
+
+if [ "$SERVER" = "" ];
+then
+   echo
+   echo "ERROR: Index are not available on intances servers"
+   echo
+   exit
+fi     
+
+# concat default 898 to server number. ex. 8981 to server1 parameter 
+PORT="898${SERVER}"
 
 echo "Commit index ${INDEX}"
 
-java -jar ${SCRIPT_PATH}/postXML.jar http://${IAHX_SERVER}:${IAHX_PORT}/${INDEX}/update ${SCRIPT_PATH}/commit.xml
+java -jar ${SCRIPT_PATH}/postXML.jar http://localhost:$PORT/${INDEX}/update ${SCRIPT_PATH}/commit.xml
 
-. ./checkerror $? "commit fail for index $1"
+. checkerror $? "commit fail for index $1"

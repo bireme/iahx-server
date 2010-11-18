@@ -9,22 +9,39 @@ INICIO=`date`
 
 if [ "$#" -ne 1 ]
 then   
-   echo "iAHx - optimize index" 
-   echo "Usage:   optimize.sh <indice>"
+   echo "iAHx OPTIMIZE" 
+   echo "Uso:     optimize.sh <indice>"
    echo 
-   echo "Ex.: optimize.sh example"
+   echo "Exemplo: optimize.sh example"
    echo
    exit
 fi
 
 INDEX=${1}
 
-# IAHX-SERVER 
-IAHX_SERVER="localhost"
-IAHX_PORT="8080"
+# discovery where index are instaled 
+for instance in `ls ${SCRIPT_PATH}/../instances/`
+do
+  if [ -f ${SCRIPT_PATH}/../instances/${instance}/conf/Catalina/localhost/${INDEX}.xml ];
+  then
+     SERVER=${instance}
+     break
+  fi     	 
+done
+
+if [ "$SERVER" = "" ];
+then
+   echo
+   echo "ERROR: Index are not available on intances servers"
+   echo
+   exit
+fi     
+
+# concat default 898 to server number. ex. 8981 to server1 parameter 
+PORT="898${SERVER}"
 
 echo "Optimize index ${INDEX}"
 
-java -jar ${SCRIPT_PATH}/postXML.jar http://${IAHX_SERVER}:${IAHX_PORT}/${INDEX}/update ${SCRIPT_PATH}/optimize.xml
+java -jar ${SCRIPT_PATH}/postXML.jar http://localhost:$PORT/${INDEX}/update ${SCRIPT_PATH}/optimize.xml
 
-. ./checkerror $? "optimize fail for index $1"
+. checkerror $? "optimize fail for index $1"

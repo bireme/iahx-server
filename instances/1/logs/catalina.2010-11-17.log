@@ -1,0 +1,362 @@
+Nov 17, 2010 2:04:12 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/projects/iahx/temp/iahx-server/jre/lib/amd64/server:/home/projects/iahx/temp/iahx-server/jre/lib/amd64:/home/projects/iahx/temp/iahx-server/jre/../lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib
+Nov 17, 2010 2:04:12 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8981
+Nov 17, 2010 2:04:12 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 325 ms
+Nov 17, 2010 2:04:12 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Nov 17, 2010 2:04:12 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.20
+Nov 17, 2010 2:04:12 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init()
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: Using JNDI solr.home: /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.CoreContainer$Initializer initialize
+INFO: looking for solr.xml: /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local/solr.xml
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: Solr home set to '/home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local/'
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader createClassLoader
+INFO: Reusing parent classloader
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: Using JNDI solr.home: /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: Solr home set to '/home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local/'
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrResourceLoader createClassLoader
+INFO: Reusing parent classloader
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrCore <init>
+INFO: Opening new SolrCore at /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local/, dataDir=/home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local/data/
+Nov 17, 2010 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+Nov 17, 2010 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=bvs
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created string: org.apache.solr.schema.StrField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created boolean: org.apache.solr.schema.BoolField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created integer: org.apache.solr.schema.IntField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created long: org.apache.solr.schema.LongField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created float: org.apache.solr.schema.FloatField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created double: org.apache.solr.schema.DoubleField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created sint: org.apache.solr.schema.SortableIntField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created slong: org.apache.solr.schema.SortableLongField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created sfloat: org.apache.solr.schema.SortableFloatField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created sdouble: org.apache.solr.schema.SortableDoubleField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created date: org.apache.solr.schema.DateField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created text_ws: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created decs: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.KeywordTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created decs_simple: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.PatternTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.RemoveDuplicatesTokenFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created decs_code: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.PatternTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created dateiso: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created text: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.StandardTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created text_with_decs: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created string_lower: org.apache.solr.schema.StrField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WhitespaceTokenizerFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.ISOLatin1AccentFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.WordDelimiterFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created null: org.apache.solr.analysis.LowerCaseFilterFactory
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created textSpell: org.apache.solr.schema.TextField
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created ignored: org.apache.solr.schema.StrField
+Nov 17, 2010 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field is tw
+Nov 17, 2010 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is AND
+Nov 17, 2010 2:04:12 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: null
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrCore parseListener
+INFO: Searching for listeners: //listener[@event="firstSearcher"]
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.SolrCore parseListener
+INFO: Searching for listeners: //listener[@event="newSearcher"]
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created xslt: org.apache.solr.request.XSLTResponseWriter
+Nov 17, 2010 2:04:12 PM org.apache.solr.request.XSLTResponseWriter init
+INFO: xsltCacheLifetimeSeconds=500000
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created standard: org.apache.solr.handler.StandardRequestHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created bvs: org.apache.solr.handler.StandardRequestHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /update: org.apache.solr.handler.XmlUpdateRequestHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.core.RequestHandlers$1 create
+INFO: adding lazy requestHandler: solr.CSVRequestHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /update/csv: org.apache.solr.core.RequestHandlers$LazyRequestHandlerWrapper
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /admin/luke: org.apache.solr.handler.admin.LukeRequestHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /admin/system: org.apache.solr.handler.admin.SystemInfoHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /admin/plugins: org.apache.solr.handler.admin.PluginInfoHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /admin/threads: org.apache.solr.handler.admin.ThreadDumpHandler
+Nov 17, 2010 2:04:12 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /admin/properties: org.apache.solr.handler.admin.PropertiesRequestHandler
+Nov 17, 2010 2:04:13 PM org.apache.solr.util.plugin.AbstractPluginLoader load
+INFO: created /debug/dump: org.apache.solr.handler.DumpRequestHandler
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrCore initDeprecatedSupport
+WARNING: solrconfig.xml uses deprecated <admin/gettableFiles>, Please update your config to use the ShowFileRequestHandler.
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrCore initDeprecatedSupport
+WARNING: adding ShowFileRequestHandler with hidden files: [SCRIPTS.CONF, STOPWORDS.TXT, PROTWORDS.TXT, XSLT, SYNONYMS.TXT]
+Nov 17, 2010 2:04:13 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@319c0bd6 main
+Nov 17, 2010 2:04:13 PM org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
+INFO: AutoCommit: disabled
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@30d1e7c2
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@24c68a98
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@66b51404
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7a354749
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@3fdb484d
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.QueryComponent@30d1e7c2
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.FacetComponent@24c68a98
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@66b51404
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  component:org.apache.solr.handler.component.HighlightComponent@7a354749
+Nov 17, 2010 2:04:13 PM org.apache.solr.handler.component.SearchHandler inform
+INFO: Adding  debug component:org.apache.solr.handler.component.DebugComponent@3fdb484d
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: Registered new searcher Searcher@319c0bd6 main
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.CoreContainer register
+INFO: registering core: 
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: user.dir=/home/projects/iahx/temp/iahx-server/instances/1
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init() done
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrServlet init
+INFO: SolrServlet.init()
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: Using JNDI solr.home: /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrServlet init
+INFO: SolrServlet.init() done
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: Using JNDI solr.home: /home/projects/iahx/temp/iahx-server/instances/1/../../indexes/bvs/local
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrUpdateServlet init
+INFO: SolrUpdateServlet.init() done
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init()
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: No /solr/home in JNDI
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: solr home defaulted to 'solr/' (could not find system property or JNDI)
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.CoreContainer$Initializer initialize
+INFO: looking for solr.xml: /home/projects/iahx/temp/iahx-server/instances/1/solr/solr.xml
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: Solr home set to 'solr/'
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader createClassLoader
+INFO: Reusing parent classloader
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: No /solr/home in JNDI
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: solr home defaulted to 'solr/' (could not find system property or JNDI)
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: Solr home set to 'solr/'
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader createClassLoader
+INFO: Reusing parent classloader
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrDispatchFilter init
+SEVERE: Could not start SOLR. Check solr/home property
+java.lang.RuntimeException: Can't find resource 'solrconfig.xml' in classpath or 'solr/conf/', cwd=/home/projects/iahx/temp/iahx-server/instances/1
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:194)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:162)
+	at org.apache.solr.core.Config.<init>(Config.java:100)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:112)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:69)
+	at org.apache.solr.core.CoreContainer$Initializer.initialize(CoreContainer.java:118)
+	at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:69)
+	at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:275)
+	at org.apache.catalina.core.ApplicationFilterConfig.setFilterDef(ApplicationFilterConfig.java:397)
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:108)
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:3800)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4450)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:526)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:987)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:909)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:495)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1206)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1053)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:722)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:516)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:583)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Nov 17, 2010 2:04:13 PM org.apache.solr.common.SolrException log
+SEVERE: java.lang.RuntimeException: Can't find resource 'solrconfig.xml' in classpath or 'solr/conf/', cwd=/home/projects/iahx/temp/iahx-server/instances/1
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:194)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:162)
+	at org.apache.solr.core.Config.<init>(Config.java:100)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:112)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:69)
+	at org.apache.solr.core.CoreContainer$Initializer.initialize(CoreContainer.java:118)
+	at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:69)
+	at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:275)
+	at org.apache.catalina.core.ApplicationFilterConfig.setFilterDef(ApplicationFilterConfig.java:397)
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:108)
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:3800)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4450)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:526)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:987)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:909)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:495)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1206)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1053)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:722)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:443)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:516)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:583)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init() done
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrServlet init
+INFO: SolrServlet.init()
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: No /solr/home in JNDI
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: solr home defaulted to 'solr/' (could not find system property or JNDI)
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrServlet init
+INFO: SolrServlet.init() done
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: No /solr/home in JNDI
+Nov 17, 2010 2:04:13 PM org.apache.solr.core.SolrResourceLoader locateInstanceDir
+INFO: solr home defaulted to 'solr/' (could not find system property or JNDI)
+Nov 17, 2010 2:04:13 PM org.apache.solr.servlet.SolrUpdateServlet init
+INFO: SolrUpdateServlet.init() done
+Nov 17, 2010 2:04:13 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8981
+Nov 17, 2010 2:04:13 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1249 ms
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=clinical_aspect,memSize=4266,tindexSize=58,time=1,phase1=1,nTerms=1,bigTerms=0,termInstances=1,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=type_of_study,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=mh_cluster,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=limit,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=ta_cluster,memSize=4280,tindexSize=72,time=0,phase1=0,nTerms=4,bigTerms=0,termInstances=4,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=la,memSize=4444,tindexSize=44,time=1,phase1=1,nTerms=3,bigTerms=2,termInstances=1,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.request.UnInvertedField uninvert
+INFO: UnInverted multi-valued field {field=year_cluster,memSize=4356,tindexSize=48,time=0,phase1=0,nTerms=2,bigTerms=1,termInstances=1,uses=0}
+Nov 17, 2010 2:04:42 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/bvs-local path=/select/ params={indent=on&start=0&q=*:*&rows=10&version=2.2} hits=4 status=0 QTime=57 
+Nov 17, 2010 2:05:11 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8981
+Nov 17, 2010 2:05:12 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Nov 17, 2010 2:05:12 PM org.apache.solr.core.SolrCore close
+INFO: []  CLOSING SolrCore org.apache.solr.core.SolrCore@7fb6634c
+Nov 17, 2010 2:05:12 PM org.apache.solr.core.SolrCore closeSearcher
+INFO: [] Closing main searcher on request.
+Nov 17, 2010 2:05:12 PM org.apache.solr.search.SolrIndexSearcher close
+INFO: Closing Searcher@319c0bd6 main
+	fieldValueCache{lookups=14,hits=0,hitratio=0.00,inserts=7,evictions=0,size=7,warmupTime=0,cumulative_lookups=14,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=7,cumulative_evictions=0,item_year_cluster={field=year_cluster,memSize=4356,tindexSize=48,time=0,phase1=0,nTerms=2,bigTerms=1,termInstances=1,uses=1},item_la={field=la,memSize=4444,tindexSize=44,time=1,phase1=1,nTerms=3,bigTerms=2,termInstances=1,uses=1},item_ta_cluster={field=ta_cluster,memSize=4280,tindexSize=72,time=0,phase1=0,nTerms=4,bigTerms=0,termInstances=4,uses=1},item_limit={field=limit,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=1},item_mh_cluster={field=mh_cluster,memSize=4224,tindexSize=32,time=1,phase1=1,nTerms=0,bigTerms=0,termInstances=0,uses=1},item_type_of_study={field=type_of_study,memSize=4224,tindexSize=32,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=1},item_clinical_aspect={field=clinical_aspect,memSize=4266,tindexSize=58,time=1,phase1=1,nTerms=1,bigTerms=0,termInstances=1,uses=1}}
+	filterCache{lookups=6,hits=3,hitratio=0.50,inserts=4,evictions=0,size=4,warmupTime=0,cumulative_lookups=6,cumulative_hits=3,cumulative_hitratio=0.50,cumulative_inserts=4,cumulative_evictions=0}
+	queryResultCache{lookups=1,hits=0,hitratio=0.00,inserts=1,evictions=0,size=1,warmupTime=0,cumulative_lookups=1,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=1,cumulative_evictions=0}
+	documentCache{lookups=4,hits=0,hitratio=0.00,inserts=4,evictions=0,size=4,warmupTime=0,cumulative_lookups=4,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=4,cumulative_evictions=0}
+Nov 17, 2010 2:05:12 PM org.apache.solr.update.DirectUpdateHandler2 close
+INFO: closing DirectUpdateHandler2{commits=0,autocommits=0,optimizes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+Nov 17, 2010 2:05:12 PM org.apache.solr.update.DirectUpdateHandler2 close
+INFO: closed DirectUpdateHandler2{commits=0,autocommits=0,optimizes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+Nov 17, 2010 2:05:12 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8981
