@@ -48,7 +48,6 @@ echo "Indexing ${XML} in ${INDEX} on server ${SERVER}: $INICIO"
 
 java -Xmx128m -jar ${SCRIPT_PATH}/postXML.jar http://localhost:${PORT}/${INDEX}/update ${XML}
 
-. checkerror $? "Problem indexing ${XML}"
 
 FINAL=`date`
 
