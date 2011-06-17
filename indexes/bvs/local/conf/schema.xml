@@ -19,78 +19,78 @@
       </analyzer>
     </fieldtype>
 
-	<fieldtype name="decs" class="solr.TextField" omitNorms="false">
-		<analyzer type="index" class="org.bireme.dia.analysis.DeCSAnalyzer"/>
-		<analyzer type="query">
-			<tokenizer class="solr.WhitespaceTokenizerFactory"/>
-			<filter class="solr.ISOLatin1AccentFilterFactory"/>
-			<filter class="solr.LowerCaseFilterFactory"/>
-		</analyzer>
-	</fieldtype>
-
-	<fieldtype name="decs_simple" class="solr.TextField">
-		<analyzer type="index" class="org.bireme.dia.analysis.DeCSSimpleAnalyzer"/>
-		<analyzer type="query">
-			<tokenizer class="solr.KeywordTokenizerFactory"/>
-			<filter class="solr.ISOLatin1AccentFilterFactory"/>
-			<filter class="solr.LowerCaseFilterFactory"/>
-		</analyzer>
-	</fieldtype>
-
-	<fieldtype name="decs_code" class="solr.TextField" omitNorms="true">
-		<analyzer type="index">
-			<tokenizer class="solr.PatternTokenizerFactory" pattern="(\^d[0-9]+)" group="1"/>
-			<filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
-		</analyzer>
+    <fieldtype name="decs" class="solr.TextField" omitNorms="false">
+        <analyzer type="index" class="org.bireme.dia.analysis.DeCSAnalyzer"/>
+        <analyzer type="query">
+            <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+            <filter class="solr.ISOLatin1AccentFilterFactory"/>
+            <filter class="solr.LowerCaseFilterFactory"/>
+        </analyzer>
     </fieldtype>
 
-	<fieldtype name="dateiso" class="solr.TextField">
-		<analyzer type="index">
-			<tokenizer class="solr.PatternTokenizerFactory" pattern="(^[0-9]{4})" group="1"/>
-		</analyzer>
-	</fieldtype>
+    <fieldtype name="decs_simple" class="solr.TextField">
+        <analyzer type="index" class="org.bireme.dia.analysis.DeCSSimpleAnalyzer"/>
+        <analyzer type="query">
+            <tokenizer class="solr.KeywordTokenizerFactory"/>
+            <filter class="solr.ISOLatin1AccentFilterFactory"/>
+            <filter class="solr.LowerCaseFilterFactory"/>
+        </analyzer>
+    </fieldtype>
 
-	<fieldtype name="text" class="solr.TextField" positionIncrementGap="100">
+    <fieldtype name="decs_code" class="solr.TextField" omitNorms="true">
+        <analyzer type="index">
+            <tokenizer class="solr.PatternTokenizerFactory" pattern="(\^d[0-9]+)" group="1"/>
+            <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+        </analyzer>
+    </fieldtype>
+
+    <fieldtype name="dateiso" class="solr.TextField">
+        <analyzer type="index">
+            <tokenizer class="solr.PatternTokenizerFactory" pattern="(^[0-9]{4})" group="1"/>
+        </analyzer>
+    </fieldtype>
+
+    <fieldtype name="text" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
-		<filter class="solr.ISOLatin1AccentFilterFactory"/>
+        <filter class="solr.ISOLatin1AccentFilterFactory"/>
         <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0"/>
         <filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
-		<filter class="solr.ISOLatin1AccentFilterFactory"/>
+        <filter class="solr.ISOLatin1AccentFilterFactory"/>
         <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="0" catenateNumbers="0" catenateAll="0"/>
         <filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>
     </fieldtype>
 
-	<fieldtype name="text_with_decs" class="solr.TextField">
-		<analyzer type="index" class="org.bireme.dia.analysis.BVSStandardAnalyzer"/>
-		<analyzer type="query">
-			<tokenizer class="solr.StandardTokenizerFactory"/>
-			<filter class="solr.ISOLatin1AccentFilterFactory"/>            
-			<filter class="solr.LowerCaseFilterFactory"/>
-		</analyzer>
-	</fieldtype>
+    <fieldtype name="text_with_decs" class="solr.TextField">
+        <analyzer type="index" class="org.bireme.dia.analysis.BVSStandardAnalyzer"/>
+        <analyzer type="query">
+            <tokenizer class="solr.StandardTokenizerFactory"/>
+            <filter class="solr.ISOLatin1AccentFilterFactory"/>            
+            <filter class="solr.LowerCaseFilterFactory"/>
+        </analyzer>
+    </fieldtype>
 
-	<fieldtype name="string_lower" class="solr.StrField">
-		<analyzer>
-			<tokenizer class="solr.LowerCaseTokenizerFactory"/>
-		</analyzer>
-	</fieldtype>
+    <fieldtype name="string_lower" class="solr.StrField">
+        <analyzer>
+            <tokenizer class="solr.LowerCaseTokenizerFactory"/>
+        </analyzer> 
+    </fieldtype>
 
-	<!-- spellchecker -->
+    <!-- spellchecker -->
     <fieldType name="textSpell" class="solr.TextField" positionIncrementGap="100" >
       <analyzer>
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
-		<filter class="solr.ISOLatin1AccentFilterFactory"/>
+        <filter class="solr.ISOLatin1AccentFilterFactory"/>
         <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0"/>
         <filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>
     </fieldType>
     
-	<fieldtype name="ignored" stored="false" indexed="false" class="solr.StrField" />
+    <fieldtype name="ignored" stored="false" indexed="false" class="solr.StrField" />
  </types>
 
 
@@ -155,6 +155,9 @@
    <!-- catchall field, containing all other searchable text fields (implemented
         via copyField further on in this schema  -->
    <field name="tw" type="text_with_decs" indexed="true" stored="false" multiValued="true"/>
+
+   <field name="spell" type="textSpell" indexed="true" stored="false" multiValued="true"/>
+   
  </fields>
 
  <!-- field to use to determine and enforce document uniqueness. -->
@@ -190,5 +193,7 @@
 
  <!-- indice de revista -->
  <copyField source="ta_var" dest="ta"/>
+
+ <copyField source="ti" dest="spell"/> 
  
 </schema>

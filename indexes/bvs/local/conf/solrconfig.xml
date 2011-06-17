@@ -123,28 +123,51 @@
     <!-- default values for query parameters -->
      <lst name="defaults">
        <str name="echoParams">explicit</str>
-     </lst>  
-	 <lst name="invariants">
-		 <str name="facet">true</str>
-		 <str name="facet.field">type</str>
+       <str name="spellcheck">true</str>
+       <!-- omp = Only More Popular -->
+       <str name="spellcheck.onlyMorePopular">true</str>
+       <!-- exr = Extended Results -->
+       <str name="spellcheck.extendedResults">false</str>
+       <!--  The number of suggestions to return -->
+       <str name="spellcheck.count">1</str>
+       <str name="spellcheck.collate">true</str>
+     </lst>
+     <arr name="last-components">
+        <str>spellcheck</str>
+     </arr>
+     
+     <lst name="invariants">
+         <str name="facet">true</str>
+         <str name="facet.field">type</str>
          <str name="facet.field">clinical_aspect</str>
          <str name="facet.field">fulltext</str>
          <str name="facet.field">type_of_study</str>
-		 <str name="facet.field">mh_cluster</str>
-		 <str name="facet.field">limit</str>
-		 <str name="facet.field">ta_cluster</str>
-		 <str name="facet.field">la</str>
-		 <str name="facet.field">year_cluster</str>
-		 <str name="facet.limit">20</str>
-		 <str name="facet.mincount">1</str>
-	 </lst>
+         <str name="facet.field">mh_cluster</str>
+         <str name="facet.field">limit</str>
+         <str name="facet.field">ta_cluster</str>
+         <str name="facet.field">la</str>
+         <str name="facet.field">year_cluster</str>
+         <str name="facet.limit">20</str>
+         <str name="facet.mincount">1</str>
+     </lst>
   </requestHandler>
 
   <requestHandler name="bvs" class="solr.StandardRequestHandler">
     <!-- default values for query parameters -->
-    <lst name="defaults">
-      <str name="echoParams">explicit</str>
-    </lst>
+     <lst name="defaults">
+       <str name="echoParams">explicit</str>
+       <str name="spellcheck">true</str>
+       <!-- omp = Only More Popular -->
+       <str name="spellcheck.onlyMorePopular">true</str>
+       <!-- exr = Extended Results -->
+       <str name="spellcheck.extendedResults">false</str>
+       <!--  The number of suggestions to return -->
+       <str name="spellcheck.count">1</str>
+       <str name="spellcheck.collate">true</str>
+     </lst>
+     <arr name="last-components">
+        <str>spellcheck</str>
+     </arr>
     
     <lst name="invariants">
         <str name="facet">true</str>
@@ -161,6 +184,26 @@
         <str name="facet.mincount">1</str>
     </lst>
  </requestHandler>
+
+ <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
+
+    <lst name="spellchecker">
+      <str name="name">default</str>
+      <str name="classname">solr.IndexBasedSpellChecker</str>
+      <str name="field">spell</str>
+      <int name="suggestionCount">1</int>
+      <!-- Optional, by default use in-memory index (RAMDirectory) -->
+      <str name="spellcheckIndexDir">./spellchecker</str>
+      <!-- Set the accuracy (float) to be used for the suggestions. Default is 0.5 -->
+      <str name="accuracy">0.7</str>
+      <!-- Require terms to occur in 1/100th of 1% of documents in order to be included in the dictionary -->
+      <float name="thresholdTokenFrequency">.0001</float>
+    </lst>
+    
+    <!-- This field type's analyzer is used by the QueryConverter to tokenize the value for "q" parameter -->
+    <str name="queryAnalyzerFieldType">textSpell</str>
+    <str name="buildOnOptimize">true</str>
+ </searchComponent> 
 
  <!-- Update request handler.
 
