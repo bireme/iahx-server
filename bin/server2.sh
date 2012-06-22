@@ -27,6 +27,7 @@ fi
 
 JAVA_OPTS="$SERVER $HEAPSIZE" 
 export JAVA_OPTS JAVA_HOME
+export CATALINA_PID=${SCRIPT_PATH}/../instances/2/iahx-server.pid
 
 cd ${SCRIPT_PATH}/../instances/2
 

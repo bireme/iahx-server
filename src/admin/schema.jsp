@@ -20,7 +20,7 @@
 <%-- $Source: /cvs/main/searching/SolrServer/resources/admin/index.jsp,v $ --%>
 <%-- $Name:  $ --%>
   
-<script src="jquery-1.2.3.min.js"></script>
+<script src="jquery-1.4.3.min.js"></script>
 <script>
 
 (function($, libName) {
@@ -53,7 +53,20 @@
       });
 
     },
-    
+    // get the reportDocCount parameter, could ask for others
+    getParamDefault: function(paramName, defaultVal) {        
+     var searchString = window.location.search.substring(1),
+                                    i, val, params = searchString.split("&");
+
+      for (i=0;i<params.length;i++) {
+         val = params[i].split("=");
+         if (val[0] == paramName) {
+            return unescape(val[1]);
+         }
+      }
+      return defaultVal;
+    },
+ 
     //load the Schema from the LukeRequestHandler
     // this loads every field, and in each field the copy source/dests and flags
     // we also load the list of field types, and the list of flags
@@ -114,7 +127,8 @@
     //further populates the loaded schema with information gathered
     // from the no argument LukeRequestHandler
     loadFromLukeHandler: function(func) {
-      $.getJSON(solr.pathToLukeHandler+'?wt=json', function(data) {
+
+      $.getJSON(solr.pathToLukeHandler+'?wt=json' + '&reportDocCount=' + solr.getParamDefault('reportDocCount', 'false'), function(data) {
         $.each(data.fields, function(i, item) {
           var field = solr.schemaFields[i];
           
@@ -183,7 +197,8 @@
       if (isNaN(numTerms) || numTerms <=0 || numTerms.indexOf('.') != -1) {
         return;
       }
-			$.getJSON(solr.pathToLukeHandler+'?fl='+fieldName+'&wt=json&numTerms='+numTerms, function(data) {                  
+ 
+	    $.getJSON(solr.pathToLukeHandler+'?fl='+fieldName+'&wt=json&numTerms='+numTerms+'&reportDocCount=' + solr.getParamDefault('reportDocCount', 'false'), function(data) {                  
 				solr.schemaFields[fieldName]['topTerms'] = solr.lukeArrayToHash(data.fields[fieldName].topTerms);
         if ($.isFunction(func)) {
           func(solr.schemaFields[fieldName]['topTerms'], fieldName);
@@ -282,7 +297,7 @@
     //Displays information about an Analyzer in the main content area
     displayAnalyzer: function(analyzer, type, shouldCollapse) {
       var tid = type.replace(' ', '');
-      var collapse = shouldCollapse && (analyzer.tokenizer != undefined || analyzer.filters != undefined);
+      var collapse = shouldCollapse && (analyzer.charFilters != undefined || analyzer.tokenizer != undefined || analyzer.filters != undefined);
       $('#mainInfo').append(solr.createNameValueText(type, function(p) {
         p.appendChild(document.createTextNode(analyzer.className + ' '));
         if (collapse) {
@@ -297,6 +312,24 @@
       adiv.className='analyzer';
       if (collapse) {
         adiv.style.display='none';
+      }
+      if (analyzer.charFilters != undefined) {
+        adiv.appendChild(solr.createNameValueText('Char Filters', ''));
+        var f = document.createElement('ol');
+        $.each(analyzer.charFilters, function(i, item) {
+          var fil = document.createElement('li');
+          var filterText = item.className;
+          if (item.args != undefined) {
+            filterText += ' args:{'
+            $.each(item.args, function(fi, fitem) {
+              filterText += fi + ': ' + fitem + ' ';
+            });
+            filterText +='}';
+            fil.innerHTML = filterText;
+            f.appendChild(fil);
+          }
+        });
+        adiv.appendChild(f);
       }
       if (analyzer.tokenizer != undefined) {
         adiv.appendChild(solr.createNameValueText("Tokenizer Class", analyzer.tokenizer.className));

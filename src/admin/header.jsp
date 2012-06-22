@@ -33,11 +33,12 @@ var host_name="<%= hostname %>"
 </head>
 
 <body>
-  <div id="header">
-    <p class="logo"><a href="."><img src="iahxserver.jpg" alt="" /></a></p>
-    <h1>Solr Admin (<%= collectionName %>)
-    <%= enabledStatus==null ? "" : (isEnabled ? " - Enabled" : " - Disabled") %> </h1>
-    
-    <p><%= hostname %>:<%= port %></p>
-    <p>cwd=<%= cwd %>  SolrHome=<%= solrHome %></p>
-  </div>
+<a href="."><img border="0" align="right" height="78" width="142" src="solr_small.png" alt="Solr"></a>
+<h1>Solr Admin (<%= collectionName %>)
+<%= enabledStatus==null ? "" : (isEnabled ? " - Enabled" : " - Disabled") %> </h1>
+
+<%= hostname %>:<%= port %><br/>
+cwd=<%= cwd %>  SolrHome=<%= solrHome %>
+<br/>
+<%String cachingStatus = " HTTP caching is ";  %>
+<%= cachingEnabled ? cachingStatus + " ON": cachingStatus + " OFF" %>

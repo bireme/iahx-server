@@ -132,11 +132,22 @@
     <servlet-name>ping</servlet-name>
     <url-pattern>/admin/ping</url-pattern>
   </servlet-mapping>
+
+  <!-- @Deprecated -->
+  <servlet-mapping>
+    <servlet-name>Logging</servlet-name>
+    <url-pattern>/admin/logging.jsp</url-pattern>
+  </servlet-mapping>
   
   <mime-mapping>
     <extension>.xsl</extension>
     <!-- per http://www.w3.org/TR/2006/PR-xslt20-20061121/ -->
     <mime-type>application/xslt+xml</mime-type>
   </mime-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 
 </web-app>

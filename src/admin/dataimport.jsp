@@ -1,3 +1,5 @@
+<%@ page import="org.apache.solr.request.SolrRequestHandler" %>
+<%@ page import="java.util.Map" %>
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
 <%--
  Licensed to the Apache Software Foundation (ASF) under one or more
@@ -16,9 +18,36 @@
  limitations under the License.
 --%>
 <%-- do a verbatim include so we can use the local vars --%>
+<%@include file="_info.jsp"%>
 <html>
+<%
+  String handler = request.getParameter("handler");
+
+  if (handler == null) {
+    Map<String, SolrRequestHandler> handlers = core.getRequestHandlers();
+%>
+<head>
+  <title>DataImportHandler Interactive Development</title>
+  <link rel="stylesheet" type="text/css" href="solr-admin.css">
+</head>
+<body>
+Select handler:
+<ul>
+<%
+    for (String key : handlers.keySet()) {
+      if (handlers.get(key).getClass().getName().equals("org.apache.solr.handler.dataimport.DataImportHandler")) { %>
+  <li><a href="dataimport.jsp?handler=<%=key%>"><%=key%></a></li>
+<%
+      }
+    }
+%>
+</ul>
+</body>
+<% } else { %>
+
 <frameset cols = "50%, 50%">
-  <frame src ="debug.jsp" />
-  <frame src ="../dataimport?command=full-import&debug=on&verbose=true"  name="result"/>
+  <frame src ="debug.jsp?handler=<%=handler%>" />
+  <frame src ="..<%=handler%>?command=status"  name="result"/>
 </frameset>
+<% } %>
 </html>

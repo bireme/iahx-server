@@ -1,3 +1,5 @@
+<%@ page import="org.apache.solr.core.SolrCore" %>
+<%@ page import="java.util.Collection" %>
 <%--
  Licensed to the Apache Software Foundation (ASF) under one or more
  contributor license agreements.  See the NOTICE file distributed with
@@ -20,12 +22,28 @@
 <link rel="stylesheet" type="text/css" href="solr-admin.css">
 <link rel="icon" href="favicon.ico" type="image/ico"></link>
 <link rel="shortcut icon" href="favicon.ico" type="image/ico"></link>
-<title>iAHx Server</title>
+<title>Welcome to Solr</title>
 </head>
 
 <body>
+<h1>Welcome to Solr!</h1>
+<a href="."><img border="0" align="right" height="78" width="142" src="admin/solr_small.png" alt="Solr"/></a>
 
-<img src="admin/iahxserver.jpg" alt="iAHx Server"/>
+<% 
+  org.apache.solr.core.CoreContainer cores = (org.apache.solr.core.CoreContainer)request.getAttribute("org.apache.solr.CoreContainer");
+  Collection<SolrCore> solrCores = cores.getCores();
+  if( cores != null
+   && solrCores.size() > 0 // HACK! check that we have valid names...
+   && solrCores.iterator().next().getName().length() != 0 ) {
+    for( org.apache.solr.core.SolrCore core : cores.getCores() ) {
+       String coreName = core.getName();
+      if("".equals(coreName) ) coreName =".";
+%>
+<a href="<%= coreName %>/admin/">Admin <%= core.getName() %></a>
+<br/>
+<% }} else { %>
+<a href="admin/">Solr Admin</a>
+<% } %>
 
 </body>
 </html>

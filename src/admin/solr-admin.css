@@ -51,6 +51,15 @@ input.stdbutton:hover {
    border: groove #0000ff;
 }
 
+input.stdbuttondis{
+   font-family: ITC Officina Sans Book, Helvetica, Arial, sans-serif;
+   font-style: bold;
+   font-size: 11;
+   text-transform: capitalize;
+   color: #8B8B83;
+   background-color: #dddddd;
+   border: groove #8B8B83;
+}
 
 body {
    background-color: #bbbbbb;
@@ -203,61 +212,4 @@ table.histogram td, table.histogram th {
 }
 div.analyzer {
   margin-left:20px;
-}
-
-/* Begin LucidWorks */
-
-body {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida", sans-serif;
-  background-color: #FFFFFF;
-  padding-left: 2em;
-  padding-right: 2em;
-  line-height: 1.33;
-}
-
-a:link, a:visited {
-  color: #033268;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #033268;
-}
-
-table {
-  background-color: #FFFFFF;
-  clear: both;
-  border: 1px solid #666666;
-}
-
-th, td {
-  border-bottom-color: #FCB315;
-  padding: 0 0.5em;
-}
-
-#header {
-  border-bottom: 7px solid #FCB315;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-  min-height: 50px;
-}
-
-#header p {
-  margin: 0;
-  padding: 0;
-}
-
-#header .logo {
-  float: right;
-  margin: 0;
-}
-#header .logo img {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-#header a {
-  text-decoration: none;
-  border: none;
-  background: transparent;
-  display: block;
 }

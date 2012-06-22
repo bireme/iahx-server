@@ -44,4 +44,4 @@ echo "Commit index ${INDEX}"
 
 java -jar ${SCRIPT_PATH}/postXML.jar http://localhost:$PORT/${INDEX}/update ${SCRIPT_PATH}/commit.xml
 
-. checkerror $? "commit fail for index $1"
+

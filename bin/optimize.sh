@@ -44,4 +44,3 @@ echo "Optimize index ${INDEX}"
 
 java -jar ${SCRIPT_PATH}/postXML.jar http://localhost:$PORT/${INDEX}/update ${SCRIPT_PATH}/optimize.xml
 
-. checkerror $? "optimize fail for index $1"

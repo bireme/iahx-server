@@ -15,8 +15,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<!-- $Id: tabular.xsl 673168 2008-07-01 18:41:41Z hossman $ -->
-<!-- $URL: http://svn.apache.org/repos/asf/lucene/solr/tags/release-1.3.0/src/webapp/web/admin/tabular.xsl $ -->
+<!-- $Id: tabular.xsl 1075192 2011-02-28 00:50:09Z uschindler $ -->
+<!-- $URL: https://svn.apache.org/repos/asf/lucene/dev/branches/branch_3x/solr/webapp/web/admin/tabular.xsl $ -->
 
 
 <xsl:stylesheet
@@ -27,7 +27,7 @@
   <xsl:output
     method="html"
     encoding="utf-8"
-    media-type="text/html; charset=UTF-8"
+    media-type="text/html"
     indent="yes"
     doctype-public="-//W3C//DTD HTML 4.01//EN"
     doctype-system="http://www.w3.org/TR/html4/strict.dtd" />
@@ -39,14 +39,14 @@
         <link rel="stylesheet" type="text/css" href="solr-admin.css"></link>
         <link rel="icon" href="favicon.ico" type="image/ico"></link>
         <link rel="shortcut icon" href="favicon.ico" type="image/ico"></link>
-        <title>SOLR Search Results</title>
+        <title>Solr Search Results</title>
       </head>
       <body>
         <a href=".">
-           <img border="0" align="right" height="61" width="142" src="solr-head.gif" alt="SOLR">
+           <img border="0" align="right" height="78" width="142" src="solr_small.png" alt="Apache Solr">
            </img>
         </a>
-        <h1>SOLR Search Results</h1>
+        <h1>Solr Search Results</h1>
           <br clear="all" />
         <xsl:apply-templates/>
         <br /><br />
