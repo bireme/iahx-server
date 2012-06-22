@@ -3,3 +3,5 @@ instances/2/work/Catalina/localhost
 instances/1/logs/
 instances/2/logs/
 instances/1/solr/
+instances/1/iahx-server.pid
+instances/2/iahx-server.pid

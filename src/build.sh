@@ -14,13 +14,12 @@ WAR_NAME="iahx-solr-$1".war
 
 jar cvf $WAR_NAME .
 
-#update distribution folder
-cp $WAR_NAME ../dist/
-
 #update instances resources folder
 cp $WAR_NAME ../instances/1/resources/
-mv $WAR_NAME ../instances/2/resources/
+cp $WAR_NAME ../instances/2/resources/
+
+rm $WAR_NAME
 
 echo
-echo "Build $WAR_NAME created and available on ../dist directory"
+echo "Build $WAR_NAME created and available on instances directory"
 echo 
