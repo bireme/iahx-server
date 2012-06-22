@@ -5,11 +5,7 @@ case $scriptpath in
   * )  SCRIPT_PATH=`dirname $scriptpath`
 esac
 
-SOLR_HOME=$SCRIPT_PATH/solr
-case "`uname`" in
-  CYGWIN*) SOLR_HOME=`cygpath -w $SOLR_HOME`
-  ;;
-esac
+SOLR_HOME=$SCRIPT_PATH/../indexes/bvs/local/
 
 
 #look for bundled jre

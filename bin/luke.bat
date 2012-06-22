@@ -6,7 +6,7 @@ IF "%1"=="" GOTO NOARGS
 %JVM% -jar lukeall.jar %*
 GOTO DONE
 :NOARGS
-%JVM% -jar lukeall.jar -index solr/data/index -ro
+%JVM% -jar lukeall.jar -index ../indexes/bvs/local/data/index -ro
 
 :DONE
 ::SET /P M=Press ENTER: 
