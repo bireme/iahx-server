@@ -185,6 +185,23 @@
     </lst>
  </requestHandler>
 
+  <requestHandler name="/related" class="solr.MoreLikeThisHandler">
+     <lst name="defaults">
+       <str name="echoParams">explicit</str>
+       <str name="fl">*,score</str>
+       <str name="mlt.count">10</str>
+       <str name="mlt.mintf">1</str>
+       <str name="mlt.mindf">2</str>
+       <str name="mlt.minwl">3</str>
+       <str name="mlt.maxqt">100</str>
+       <str name="mlt.fl">ti,ab,mh</str>
+     </lst>
+
+     <lst name="invariants">
+         <str name="mlt.match.include">true</str>
+     </lst>
+  </requestHandler>
+
  <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
 
     <lst name="spellchecker">
